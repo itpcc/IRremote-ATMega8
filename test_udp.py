@@ -1,0 +1,22 @@
+from socket import *
+import sys
+import select
+import time
+
+address = ('192.168.1.255', 6005)
+client_socket = socket(AF_INET, SOCK_DGRAM)
+
+num_retransmits = 0
+while(num_retransmits < 60):
+    num_retransmits = num_retransmits + 1
+
+
+    data = "Request 1"
+    client_socket.sendto(data, address)
+    print "Sending request 1"
+
+    # recv_data, addr = client_socket.recvfrom(2048)
+
+    # print recv_data, "!! -> ", addr
+	
+	time.delay(1)
