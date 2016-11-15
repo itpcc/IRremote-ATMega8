@@ -27,6 +27,12 @@ $IRCMD,3,00FAF,RC5,48260482*73
        --- Remaining command count
 ```
 
+# ไม่มีข้อมูลให้ทำ :v
+
+```
+$IREMP*44
+```
+
 # Invalid received command
 ```
 $IRIVD*40
