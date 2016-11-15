@@ -5,7 +5,7 @@ Reference: [NMEA Protocol](https://en.wikipedia.org/wiki/NMEA_0183)
 # รับ IP ที่จะให้ติดต่อ
 
 ```
-$IRCIP,192,168,1,112*47
+$IRCIP,192.168.1.112*47
         |----------|
           Phone IP
 ```
