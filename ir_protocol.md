@@ -2,7 +2,7 @@ Protocol
 
 Reference: [NMEA Protocol](https://en.wikipedia.org/wiki/NMEA_0183)
 
-# รับ IP ที่จะให้ติดต่อ
+# รับ IP ที่จะให้ติดต่อ (UDP)
 
 ```
 $IRCIP,192.168.1.112*47
@@ -10,22 +10,31 @@ $IRCIP,192.168.1.112*47
           Phone IP
 ```
 
-# ขอคำสั่ง
+# ขอคำสั่ง (ESP-TCP)
 ```
 $IRREQ,00000*41
          |
-         --- IR Sent command ID (00000 if no command sent)
+         --- IR Sent command ID (00000 if no command sent) คำสั่งล่าสุดที่ทำไปแล้ว
 ```
 
-# ส่งคำสั่ง (จากเครื่องควบคุม)
+# ส่งคำสั่ง (จากเครื่องควบคุม) (Mobile-TCP)
 ```
-$IRCMD,3,00FAF,RC5,48260482*73
-       |   |    |      |
+$IRCMD,1,00FAF,RC5,48260482,12*73
+       |   |    |      |     |
+       |   |    |      |     --- nbits (ถ้ามีระบุใน IR Command) หรือ address กรณี panasonic
        |   |    |      --- Command HEX code 
        |   |    --- protocol (3 char)
        |   --- Command unique ID (5 alphanumeric)
-       --- Remaining command count
+       --- Remaining command count (1 ยังเหลือ 0 หมดแล้ว)
 ```
+
+## Protocol
+- RC5
+- RC6
+- PAN (Panasonic)
+- NEC
+- SAM (Samsung)
+
 
 # ไม่มีข้อมูลให้ทำ :v
 

@@ -60,7 +60,10 @@ void loop() {
     recentCH = ch;
   }
   if (Serial2.available()) {     // If anything comes in Serial1 (ESP8266)
-    Serial1.write(Serial2.read());   // read it and send it out Serial1 (pins 0 & 1)
+    ch = Serial2.read();
+    Serial1.write(ch);   // read it and send it out Serial1 (pins 0 & 1)
+    Serial.write(ch);
+    if(ch == '\n') Serial.print("              ");
     /*str = Serial2.readString();
     Serial1.print(str);
     Serial.print("\r\nESP8266:");

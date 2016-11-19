@@ -1,0 +1,247 @@
+
+AT+CIPSEND=15
+
+              ERROR
+              AT+CIPSEND=15
+              link is not valid
+              
+              ERROR
+              $IRREQ,00000*41$IRREQ,00000*41
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.1.104",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.1.104",10000
+              
+AT+CIPSEND=15
+
+              busy p...
+              AT+CIPSEND=15
+              busy p...
+              $IRREQ,00000*41$IRREQ,00000*41
+AT+CIPCLOSE
+
+              busy p...
+              AT+CIPCLOSE
+              busy p...
+              
+AT+CIPSTART="TCP","192.168.1.104",10000
+
+              busy p...
+              AT+CIPSTART="TCP","192.168.1.104",10000
+              busy p...
+              
+AT+CIPSEND=15
+
+              busy p...
+              AT+CIPSEND=15
+              busy p...
+              $IRREQ,00000*41$IRREQ,00000*41
+AT+CIPCLOSE
+
+              busy p...
+              AT+CIPCLOSE
+              busy p...
+              
+              ERROR
+              CLOSED
+              
+AT+CIPSTART="TCP","192.168.1.104",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.1.104",10000
+              
+AT+CIPSEND=15
+
+              busy p...
+              AT+CIPSEND=15
+              busy p...
+              $IRREQ,00000*41$IRREQ,00000*41
+AT+CIPCLOSE
+
+              busy p...
+              AT+CIPCLOSE
+              busy p...
+              
+AT+CIPSTART="TCP","192.168.1.104",10000
+
+              busy p...
+              AT+CIPSTART="TCP","192.168.1.104",10000
+              busy p...
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=15
+
+              ERROR
+              AT+CIPSEND=15
+              
+              OK
+              > $IRREQ,00000*41
+              Recv 15 bytes
+              
+              SEND OK
+              
+              +IPD,9:$IREMP*44
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              CLOSED
+              
+              OK
+              
+AT+CIPSTART="TCP","192.168.1.104",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.1.104",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=15
+
+              ERROR
+              AT+CIPSEND=15
+              
+              OK
+              > $IRREQ,00000*41
+              Recv 15 bytes
+              
+              SEND OK
+              
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              CLOSED
+              
+              OK
+              
+AT+CIPSTART="TCP","192.168.1.104",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.1.104",10000
+              
+AT+CIPSEND=15
+
+              busy p...
+              AT+CIPSEND=15
+              busy p...
+              $IRREQ,00000*41$IRREQ,00000*41
+AT+CIPCLOSE
+
+              busy p...
+              AT+CIPCLOSE
+              busy p...
+              
+AT+CIPSTART="TCP","192.168.1.104",10000
+
+              busy p...
+              AT+CIPSTART="TCP","192.168.1.104",10000
+              busy p...
+              
+AT+CIPSEND=15
+
+              busy p...
+              AT+CIPSEND=15
+              busy p...
+              $IRREQ,00000*41$IRREQ,00000*41
+              ERROR
+              CLOSED
+              
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.1.104",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.1.104",10000
+              
+AT+CIPSEND=15
+
+              busy p...
+              AT+CIPSEND=15
+              busy p...
+              $IRREQ,00000*41$IRREQ,00000*41
+AT+CIPCLOSE
+
+              busy p...
+              AT+CIPCLOSE
+              busy p...
+              
+AT+CIPSTART="TCP","192.168.1.104",10000
+
+              busy p...
+              AT+CIPSTART="TCP","192.168.1.104",10000
+              busy p...
+              
+AT+CIPSEND=15
+
+              busy p...
+              AT+CIPSEND=15
+              busy p...
+              $IRREQ,00000*41$IRREQ,00000*41
+AT+CIPCLOSE
+
+              busy p...
+              AT+CIPCLOSE
+              busy p...
+              
+              ERROR
+              CLOSED
+              
+AT+CIPSTART="TCP","192.168.1.104",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.1.104",10000
+              
+AT+CIPSEND=15
+
+              busy p...
+              AT+CIPSEND=15
+              busy p...
+              $IRREQ,00000*41$IRREQ,00000*41
+AT+CIPCLOSE
+
+              busy p...
+              AT+CIPCLOSE
+              busy p...
+              
+AT+CIPSTART="TCP","192.168.1.104",10000
+
+              busy p...
+              AT+CIPSTART="TCP","192.168.1.104",10000
+              busy p...
+              
+AT+CIPSEND=15
+
+              busy p...
+              AT+CIPSEND=15
+              busy p...
+              $IRREQ,00000*41$IRREQ,00000*41
+AT+CIPCLOSE
+
+              busy p...
+              AT+CIPCLOSE
+              busy p...
+              
+              ERROR
+              CLOSED
+              
+AT+CIPSTART="TCP","192.168.1.104",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.1.104",10000
+              
