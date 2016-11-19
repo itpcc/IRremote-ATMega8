@@ -1,8 +1,69 @@
+#define F_CPU 16000000UL
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <pololu/time.h>
+
 #define SEND_NEC 1
 #define SEND_PANASONIC 1
 #define SEND_RC5 1
 #define SEND_RC6 1
 #define SEND_SAMSUNG 1
+
+void mark(int time) {
+	// Sends an IR mark for the specified number of microseconds.
+	// The mark output is modulated at the PWM frequency.
+	TCCR1A |= _BV(COM1A1); // Enable pin 3 PWM output
+	delayMicroseconds(time);
+}
+
+/* Leave pin off for time (given in microseconds) */
+void space(int time) {
+	// Sends an IR space for the specified number of microseconds.
+	// A space is no output, so the PWM output is disabled.
+	TCCR1A &= ~(_BV(COM1A1)); // Disable pin 3 PWM output
+	delayMicroseconds(time);
+}
+
+//~ #endif
+
+
+void enableIROut(int khz) {
+	static uint16_t pwmval;
+	// Enables IR output.  The khz value controls the modulation frequency in kilohertz.
+	// The IR output will be on pin 3 (OC2B).
+	// This routine is designed for 36-40KHz; if you use it for other values, it's up to you
+	// to make sure it gives reasonable results.  (Watch out for overflow / underflow / rounding.)
+	// TIMER2 is used in phase-correct PWM mode, with OCR2A controlling the frequency and OCR2B
+	// controlling the duty cycle.
+	// There is no prescaling, so the output frequency is 16MHz / (2 * OCR2A)
+	// To turn the output on and off, we leave the PWM running, but connect and disconnect the output pin.
+	// A few hours staring at the ATmega documentation and this will all make sense.
+	// See my Secrets of Arduino PWM at http://arcfn.com/2009/07/secrets-of-arduino-pwm.html for details.
+
+
+	// Disable the Timer2 Interrupt (which is used for receiving IR)
+	//TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
+
+	/*pinMode(TIMER_PWM_PIN, OUTPUT);*/
+	PORTB |= _BV(1);
+
+	//digitalWrite(TIMER_PWM_PIN, HIGH); // When not sending PWM, we want it low
+ //
+
+
+	// COM2A = 00: disconnect OC2A
+	// COM2B = 00: disconnect OC2B; to send signal set to 10: OC2B non-inverted
+	// WGM2 = 101: phase-correct PWM with OCRA as top
+	// CS2 = 000: no prescaling
+	// The top value for the timer.  The modulation frequency will be SYSCLOCK / 2 / OCR2A.
+	pwmval = 8000/khz;
+	TCCR1A = _BV(WGM11);
+	TCCR1B = _BV(WGM13)|_BV(CS10);
+	ICR1 = pwmval;
+	OCR1A = pwmval / 3;
+	//TIMER_CONFIG_KHZ(khz);
+}
+
 #if SEND_NEC == 1
 
 	#define NEC_BITS          32
@@ -227,59 +288,4 @@ void sendRaw(unsigned int buf[], int len, int hz){
 		}
 	}
 	space(0); // Just to be sure
-}
-
-void mark(int time) {
-	// Sends an IR mark for the specified number of microseconds.
-	// The mark output is modulated at the PWM frequency.
-	TCCR1A |= _BV(COM1A1); // Enable pin 3 PWM output
-	delayMicroseconds(time);
-}
-
-/* Leave pin off for time (given in microseconds) */
-void space(int time) {
-	// Sends an IR space for the specified number of microseconds.
-	// A space is no output, so the PWM output is disabled.
-	TCCR1A &= ~(_BV(COM1A1)); // Disable pin 3 PWM output
-	delayMicroseconds(time);
-}
-
-//~ #endif
-
-
-void enableIROut(int khz) {
-	static uint16_t pwmval;
-	// Enables IR output.  The khz value controls the modulation frequency in kilohertz.
-	// The IR output will be on pin 3 (OC2B).
-	// This routine is designed for 36-40KHz; if you use it for other values, it's up to you
-	// to make sure it gives reasonable results.  (Watch out for overflow / underflow / rounding.)
-	// TIMER2 is used in phase-correct PWM mode, with OCR2A controlling the frequency and OCR2B
-	// controlling the duty cycle.
-	// There is no prescaling, so the output frequency is 16MHz / (2 * OCR2A)
-	// To turn the output on and off, we leave the PWM running, but connect and disconnect the output pin.
-	// A few hours staring at the ATmega documentation and this will all make sense.
-	// See my Secrets of Arduino PWM at http://arcfn.com/2009/07/secrets-of-arduino-pwm.html for details.
-
-
-	// Disable the Timer2 Interrupt (which is used for receiving IR)
-	//TIMER_DISABLE_INTR; //Timer2 Overflow Interrupt
-
-	/*pinMode(TIMER_PWM_PIN, OUTPUT);*/
-	PORTB |= _BV(1);
-
-	//digitalWrite(TIMER_PWM_PIN, HIGH); // When not sending PWM, we want it low
- //
-
-
-	// COM2A = 00: disconnect OC2A
-	// COM2B = 00: disconnect OC2B; to send signal set to 10: OC2B non-inverted
-	// WGM2 = 101: phase-correct PWM with OCRA as top
-	// CS2 = 000: no prescaling
-	// The top value for the timer.  The modulation frequency will be SYSCLOCK / 2 / OCR2A.
-	pwmval = 8000/khz;
-	TCCR1A = _BV(WGM11);
-	TCCR1B = _BV(WGM13)|_BV(CS10);
-	ICR1 = pwmval;
-	OCR1A = pwmval / 3;
-	//TIMER_CONFIG_KHZ(khz);
 }

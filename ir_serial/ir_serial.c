@@ -5,6 +5,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include "uart.h"
+#include "ir_send.h"
 
 #define ESP_DEBUG 0
 
@@ -222,8 +223,8 @@ uint8_t detectNMEA(){
 }
 
 void getIRCommand(char *ptr){
-	char *tmp, *endptr;
-	IRCommand = strtoul(tmp, &endptr, 16);
+	char *endptr;
+	IRCommand = strtoul(ptr, &endptr, 16);
 	++endptr;
 	nbits = (int)strtol(endptr, NULL, 16);
 }
@@ -234,7 +235,7 @@ void getIRCommand(char *ptr){
 
 int main(){
 	uint8_t retryCount = 0;
-	char commandID[8] = "00000", number[8];
+	char commandID[8] = "00000", number[8], *tmp;
 
 	millis_Init();
 	UART_init();
@@ -367,7 +368,7 @@ int main(){
 			strcpy(commandID, "00000");
 			if(detectNMEA()){
 				PORTB &= ~_BV(2);
-				if(strstr(commandName, "IRCMD") !== NULL){
+				if(strstr(commandName, "IRCMD") != NULL){
 					// CommandID
 					commandDetail = strchr(commandDetail, ','); // Skip Remaining command count
 					tmp = strchr(commandDetail, ','); tmp = '\0'; // Fake EOS
@@ -376,28 +377,29 @@ int main(){
 
 					//
 					tmp = strchr(commandDetail, ','); tmp = '\0';
+					++tmp;
 					if(strstr(commandDetail, "NEC")){
-						getIRCommand();
+						getIRCommand(tmp);
 						#if SEND_NEC
 						sendNEC(IRCommand, nbits);
 						#endif
 					}else if(strstr(commandDetail, "RC5")){
-						getIRCommand();
+						getIRCommand(tmp);
 						#if SEND_RC5
 						sendRC5(IRCommand, nbits);
 						#endif
 					}else if(strstr(commandDetail, "RC6")){
-						getIRCommand();
+						getIRCommand(tmp);
 						#if SEND_RC6
 						sendRC6(IRCommand, nbits);
 						#endif
 					}else if(strstr(commandDetail, "PAN")){
-						getIRCommand();
+						getIRCommand(tmp);
 						#if SEND_PANASONIC
 						sendPanasonic((unsigned long)nbits, IRCommand);
 						#endif
 					}else  if(strstr(commandDetail, "SAM")){
-						getIRCommand();
+						getIRCommand(tmp);
 						#if SEND_SAMSUNG
 						sendSAMSUNG((unsigned long)nbits, IRCommand);
 						#endif

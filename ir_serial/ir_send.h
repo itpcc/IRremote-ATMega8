@@ -22,9 +22,10 @@
 #if SEND_RC5 == 1
 	void  sendRC5(unsigned long data,  int nbits);
 #endif
+
 #if SEND_RC6 == 1
 	void  sendRC6 (unsigned long data,  int nbits);
-#
+#endif
 #if SEND_SAMSUNG == 1
 	void  sendSAMSUNG (unsigned long data,  int nbits);
 #endif

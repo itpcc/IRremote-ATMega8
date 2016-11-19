@@ -34,7 +34,7 @@ HEX_EEPROM_FLAGS += --change-section-lma .eeprom=0
 
 
 ## Objects that must be built in order to link
-OBJECTS = ir_serial.o uart.o 
+OBJECTS = ir_serial.o uart.o ir_send.o 
 
 ## Objects explicitly added by the user
 LINKONLYOBJECTS = 
@@ -47,6 +47,9 @@ ir_serial.o: ../ir_serial.c
 	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
 
 uart.o: ../uart.c
+	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
+
+ir_send.o: ../ir_send.c
 	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
 
 ##Link
