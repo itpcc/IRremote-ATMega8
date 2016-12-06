@@ -9,9 +9,16 @@ This project is created by:
 
 This project is a project of CPE363 Embedded device from [CPE KMUTT](https:://cpe.kmutt.ac.th).
 
+## Schematic
+
+[Eagle file](Schematic/schematic.sch)
+
+![Eagle file](Schematic/schematic.png)
+
 ## Read more
 
 - [Custom protocol (applied from NMEA protocol) used in this project (in Thai)](ir_protocol.md)
+- [Example Android application used for project demo](https://github.com/owlaaz/IRRemote-Mobile-To-ESP8266)
 
 ## Applied repository
 - [Arduino IR Remote](https://github.com/z3t0/Arduino-IRremote)
