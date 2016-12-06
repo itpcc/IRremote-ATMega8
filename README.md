@@ -1,13 +1,13 @@
 # IRremote-ATMega8
 
-This project is for creating a device to control electronic device with infrared controlled by Smartphone or anything which can connected by Wi-Fi via ESP8266 (However, we connected it via Serial due to subject restriction policy).
+This project is for creating a device to control electronic device with infrared controlled by Smartphone or anything which can connected by Wi-Fi via ESP8266 (However, we communicate with ESP8266 via Serial due to subject restriction policy).
 
 This project is created by:
 
 - [Mr. Pongpon Kampan](https://github.com/owlaaz)
 - [Mr. Rachasak Ragkamnerd](https://github.com/itpcc)
 
-This project is a project of CPE363 Embedded device from [CPE KMUTT](https:://cpe.kmutt.ac.th).
+This project is a project of CPE363 Embedded device from [CPE KMUTT](https://cpe.kmutt.ac.th).
 
 ## Schematic
 
