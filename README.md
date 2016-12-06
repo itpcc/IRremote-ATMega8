@@ -19,6 +19,7 @@ This project is a project of CPE363 Embedded device from [CPE KMUTT](https://cpe
 
 - [Custom protocol (applied from NMEA protocol) used in this project (in Thai)](ir_protocol.md)
 - [Example Android application used for project demo](https://github.com/owlaaz/IRRemote-Mobile-To-ESP8266)
+- [Project Report](Project Report.pdf)
 
 ## Applied repository
 - [Arduino IR Remote](https://github.com/z3t0/Arduino-IRremote)
