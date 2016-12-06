@@ -26,6 +26,7 @@ $IRCMD,1,00FAF,RC5,48260482,12*73
        |   |    --- protocol (3 char)
        |   --- Command unique ID (5 alphanumeric)
        --- Remaining command count (1 ยังเหลือ 0 หมดแล้ว)
+$IRCMD,0,00001,NEC,A1DE21DE,32*46
 ```
 
 ## Protocol

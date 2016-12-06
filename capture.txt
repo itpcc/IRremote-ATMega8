@@ -1,247 +1,1613 @@
 
-AT+CIPSEND=15
+AT+CIPCLOSE
+
+AT+CIPSTART="TCP","192.168.0.101",10000
 
               ERROR
-              AT+CIPSEND=15
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00001*40
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNROD:RI
+              REMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,34:$IRCMD,1,00001,NEC,A1DE21DE,32*47
+              CLOSED
+              
+ATMega: -
+              ERROR
+              
+AT+CIPCLOSE
+
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00001*40
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,34:$IRCMD,1,00001,NEC,A1DE21DE,32*47
+              CLOSED
+              
+ATMega: -
+              ERROR
+              
+AT+CIPCLOSE
+
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00001*40
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->CO
+              MEMRARNODR:I
+              REMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,34:$IRCMD,1,00001,NEC,A1DE21DE,32*47
+              CLOSED
+              
+ATMega: -
+              ERROR
+              
+AT+CIPCLOSE
+
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00001*40
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,34:$IRCMD,1,00001,NEC,A1DE21DE,32*47
+              CLOSED
+              
+ATMega: -
+              ERROR
+              
+AT+CIPCLOSE
+
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00001*40
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,34:$IRCMD,1,00001,NEC,A1DE21DE,32*47
+              CLOSED
+              
+ATMega: -
+              ERROR
+              
+AT+CIPCLOSE
+
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00001*40
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RI
+              REMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNROD:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->CO
+              MEMRARNOD:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNROD:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDOR:IR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->CO
+              MEMRARNODR:IR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RI
+              REMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->CO
+              MEMRARNDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->CO
+              MEMRARNODR:IR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->CO
+              MEMRARNODR:I
+              REMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDOR:IR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->CO
+              MEMRARNDOR:IR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDOR:IR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNROD:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->COM
+              MEARNRDO:RIR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
+              
+              OK
+              > $IRREQ,00000*41
+
+              busy s...
+              
+              Recv 16 bytes
+              
+              SEND OK
+              
+              +IPD,10:$IREMP*43
+              CLOSED
+              
+ATMega: -->CO
+              MEMRARNODR:IR
+              EMP<--
+
+AT+CIPCLOSE
+
+              ERROR
+              AT+CIPCLOSE
+              
+              ERROR
+              
+AT+CIPSTART="TCP","192.168.0.101",10000
+
+              ERROR
+              AT+CIPSTART="TCP","192.168.0.101",10000
+              CONNECT
+              
+              OK
+              CLOSED
+              
+AT+CIPSEND=16
+
+              ERROR
+              AT+CIPSEND=16
               link is not valid
               
               ERROR
-              $IRREQ,00000*41$IRREQ,00000*41
-AT+CIPCLOSE
-
+              $IRREQ,00000*41
+$IRREQ,00000*41
               ERROR
-              AT+CIPCLOSE
-              
-              ERROR
-              
-AT+CIPSTART="TCP","192.168.1.104",10000
-
-              ERROR
-              AT+CIPSTART="TCP","192.168.1.104",10000
-              
-AT+CIPSEND=15
-
-              busy p...
-              AT+CIPSEND=15
-              busy p...
-              $IRREQ,00000*41$IRREQ,00000*41
-AT+CIPCLOSE
-
-              busy p...
-              AT+CIPCLOSE
-              busy p...
-              
-AT+CIPSTART="TCP","192.168.1.104",10000
-
-              busy p...
-              AT+CIPSTART="TCP","192.168.1.104",10000
-              busy p...
-              
-AT+CIPSEND=15
-
-              busy p...
-              AT+CIPSEND=15
-              busy p...
-              $IRREQ,00000*41$IRREQ,00000*41
-AT+CIPCLOSE
-
-              busy p...
-              AT+CIPCLOSE
-              busy p...
-              
-              ERROR
-              CLOSED
-              
-AT+CIPSTART="TCP","192.168.1.104",10000
-
-              ERROR
-              AT+CIPSTART="TCP","192.168.1.104",10000
-              
-AT+CIPSEND=15
-
-              busy p...
-              AT+CIPSEND=15
-              busy p...
-              $IRREQ,00000*41$IRREQ,00000*41
-AT+CIPCLOSE
-
-              busy p...
-              AT+CIPCLOSE
-              busy p...
-              
-AT+CIPSTART="TCP","192.168.1.104",10000
-
-              busy p...
-              AT+CIPSTART="TCP","192.168.1.104",10000
-              busy p...
-              CONNECT
-              
-              OK
-              
-AT+CIPSEND=15
-
-              ERROR
-              AT+CIPSEND=15
-              
-              OK
-              > $IRREQ,00000*41
-              Recv 15 bytes
-              
-              SEND OK
-              
-              +IPD,9:$IREMP*44
-AT+CIPCLOSE
-
-              ERROR
-              AT+CIPCLOSE
-              CLOSED
-              
-              OK
-              
-AT+CIPSTART="TCP","192.168.1.104",10000
-
-              ERROR
-              AT+CIPSTART="TCP","192.168.1.104",10000
-              CONNECT
-              
-              OK
-              
-AT+CIPSEND=15
-
-              ERROR
-              AT+CIPSEND=15
-              
-              OK
-              > $IRREQ,00000*41
-              Recv 15 bytes
-              
-              SEND OK
-              
-AT+CIPCLOSE
-
-              ERROR
-              AT+CIPCLOSE
-              CLOSED
-              
-              OK
-              
-AT+CIPSTART="TCP","192.168.1.104",10000
-
-              ERROR
-              AT+CIPSTART="TCP","192.168.1.104",10000
-              
-AT+CIPSEND=15
-
-              busy p...
-              AT+CIPSEND=15
-              busy p...
-              $IRREQ,00000*41$IRREQ,00000*41
-AT+CIPCLOSE
-
-              busy p...
-              AT+CIPCLOSE
-              busy p...
-              
-AT+CIPSTART="TCP","192.168.1.104",10000
-
-              busy p...
-              AT+CIPSTART="TCP","192.168.1.104",10000
-              busy p...
-              
-AT+CIPSEND=15
-
-              busy p...
-              AT+CIPSEND=15
-              busy p...
-              $IRREQ,00000*41$IRREQ,00000*41
-              ERROR
-              CLOSED
-              
-AT+CIPCLOSE
-
-              ERROR
-              AT+CIPCLOSE
-              
-              ERROR
-              
-AT+CIPSTART="TCP","192.168.1.104",10000
-
-              ERROR
-              AT+CIPSTART="TCP","192.168.1.104",10000
-              
-AT+CIPSEND=15
-
-              busy p...
-              AT+CIPSEND=15
-              busy p...
-              $IRREQ,00000*41$IRREQ,00000*41
-AT+CIPCLOSE
-
-              busy p...
-              AT+CIPCLOSE
-              busy p...
-              
-AT+CIPSTART="TCP","192.168.1.104",10000
-
-              busy p...
-              AT+CIPSTART="TCP","192.168.1.104",10000
-              busy p...
-              
-AT+CIPSEND=15
-
-              busy p...
-              AT+CIPSEND=15
-              busy p...
-              $IRREQ,00000*41$IRREQ,00000*41
-AT+CIPCLOSE
-
-              busy p...
-              AT+CIPCLOSE
-              busy p...
-              
-              ERROR
-              CLOSED
-              
-AT+CIPSTART="TCP","192.168.1.104",10000
-
-              ERROR
-              AT+CIPSTART="TCP","192.168.1.104",10000
-              
-AT+CIPSEND=15
-
-              busy p...
-              AT+CIPSEND=15
-              busy p...
-              $IRREQ,00000*41$IRREQ,00000*41
-AT+CIPCLOSE
-
-              busy p...
-              AT+CIPCLOSE
-              busy p...
-              
-AT+CIPSTART="TCP","192.168.1.104",10000
-
-              busy p...
-              AT+CIPSTART="TCP","192.168.1.104",10000
-              busy p...
-              
-AT+CIPSEND=15
-
-              busy p...
-              AT+CIPSEND=15
-              busy p...
-              $IRREQ,00000*41$IRREQ,00000*41
-AT+CIPCLOSE
-
-              busy p...
-              AT+CIPCLOSE
-              busy p...
-              
-              ERROR
-              CLOSED
-              
-AT+CIPSTART="TCP","192.168.1.104",10000
-
-              ERROR
-              AT+CIPSTART="TCP","192.168.1.104",10000
               
